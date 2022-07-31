@@ -18,10 +18,10 @@ function HW1() {
             {/*should work (должно работать)*/}
 
             <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
+                avatar = {messageData.avatar}
+                name = {messageData.name}
+                message = {messageData.message}
+                time = {messageData.time}
             />
 
             <hr/>

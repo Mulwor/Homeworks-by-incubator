@@ -1,43 +1,46 @@
 .container {
     display: flex;
-    width: 300px;
-    border: 1px solid greenyellow;
-    background-color: greenyellow;
+    align-items: flex-end;
+    margin: 10px;
+    padding: 12px;
+    background-color: aquamarine;
 }
 
 .avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-left: 10px;
-    margin-top: 23px;
 }
 
 .rightSide {
-    margin-top: 10px;
-    margin-left: 15px;
-    height: 60px;
-    width: 200px;
-    border-radius: 10px;
-    border: 1px solid dimgrey;
-    background-color: #0e0e0e;
+    padding: 10px;
+    border-radius: 5px 5px 5px 0;
+    background-color: rgba(255,255,255,0.3);
 }
+
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(255, 255, 255, 0.3) 0)
+}
+
 
 .naming {
-    color: #c06fc0;
-    padding-top: 7px;
-    padding-left: 13px;
+    font-size: 20px;
+    color: cyan;
+    font-weight: bold;
 }
 
+
 .message {
-    color: white;
-    padding-left: 13px;
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
 }
 
 
 .timing {
+    display: flex;
+    justify-content: flex-end;
     color: grey;
-    font-size: 13px;
-    margin-top: -17px;
-    padding-left: 150px;
 }

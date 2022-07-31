@@ -8,12 +8,14 @@ type messageDataType = {
     time: string
 }
 
-function Message(props: messageDataType) {
+function Message (props: messageDataType) {
     return (
         <div className={style.container}>
             <div className ={style.leftSide}>
                 <img className={style.avatar} src = {props.avatar}  alt="icons"/>
             </div>
+
+            <div className = {style.angle}/>
 
             <div className={style.rightSide}>
                 <div className={style.naming}>{props.name}</div>
