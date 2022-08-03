@@ -11,8 +11,7 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div>
-            // show some text
-
+            Тест №1
             <button onClick={deleteCallback}>X</button>
         </div>
     )
