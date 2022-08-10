@@ -6,7 +6,7 @@ type GreetingPropsType = {
     setNameCallback: any // need to fix any
     addUser: any // need to fix any
     error: any // need to fix any
-    totalUsers: any // need to fix any
+    totalUsers: any // need to fix anssay
 }
 
 // презентационная компонента (для верстальщика)
