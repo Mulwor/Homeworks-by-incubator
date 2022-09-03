@@ -1,9 +1,10 @@
 .container {
     display: flex;
     align-items: flex-end;
-    margin: 10px;
+    margin: 25px 70% 25px 25px;
     padding: 12px;
-    background-color: aquamarine;
+    background-color: rosybrown;
+    border-radius: 20px;
 }
 
 .avatar {
@@ -43,4 +44,8 @@
     display: flex;
     justify-content: flex-end;
     color: grey;
+}
+
+.title {
+   text-align: center;
 }

@@ -5,9 +5,12 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: url("https://kartinkin.net/uploads/posts/2022-02/thumbs/1644921106_26-kartinkin-net-p-krasivie-kartinki-na-zastavku-29.jpg");
+    background-size: cover;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
