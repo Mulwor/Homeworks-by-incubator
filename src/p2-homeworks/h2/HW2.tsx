@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Affairs from './Affairs'
 import style from "./Affairs.module.css"
 
-export type AffairPriorityType = 'high' | 'middle'| 'low'
+export type AffairPriorityType = 'high' | 'middle' | 'low'
 export type AffairType = {
     _id: number
     name: string
@@ -12,11 +12,12 @@ export type FilterType = 'all' | AffairPriorityType
 
 // constants
 const defaultAffairs: AffairType[] = [
-    {_id: 1, name: 'React', priority: 'high'},
-    {_id: 2, name: 'anime', priority: 'low'},
-    {_id: 3, name: 'games', priority: 'low'},
-    {_id: 4, name: 'work', priority: 'high'},
-    {_id: 5, name: 'html & css', priority: 'middle'},
+    {_id: 1, name: 'HTML', priority: 'high'},
+    {_id: 2, name: 'CSS', priority: 'high'},
+    {_id: 3, name: 'JavaScript', priority: 'high'},
+    {_id: 4, name: 'React', priority: 'middle'},
+    {_id: 5, name: 'Webpack', priority: 'low'},
+    {_id: 6, name: 'Vue', priority: 'low'},
 ]
 
 // pure helper functions
@@ -46,20 +47,13 @@ function HW2() {
     return (
         <div>
             <hr/>
-            <h3 className={style.title}>
-                Homeworks №2
-            </h3>
-
-            {/*should work (должно работать)*/}
+            <h3 className={style.title}> Homeworks №2 </h3>
             <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
+                data = {filteredAffairs}
+                setFilter = {setFilter}
+                deleteAffairCallback = {deleteAffairCallback}
+                filter={filter}
             />
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeAffairs/>*/}
             <hr/>
         </div>
     )

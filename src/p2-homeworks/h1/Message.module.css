@@ -1,7 +1,7 @@
 .container {
     display: flex;
     align-items: flex-end;
-    margin: 25px 70% 25px 25px;
+    margin: 25px 30px 25px 25px;
     padding: 12px;
     background-color: rosybrown;
     border-radius: 20px;

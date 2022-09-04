@@ -1,3 +1,52 @@
 .title {
     text-align: center;
 }
+
+.container {
+    margin: 25px 30px 25px 25px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.button {
+    margin: 10px;
+    width: 60px;
+    background: #003300;
+    color: #99ff99;
+    outline: none;
+}
+
+.button :focus {
+    outline: #99ff99 solid 1px;
+}
+
+.button :active {
+    background: #99ff99;
+}
+
+.affair {
+    display: flex;
+}
+
+.active {
+    background: #335533;
+}
+
+
+.high {
+    color: orange;
+}
+
+.middle {
+    color: yellow;
+}
+
+.low {
+    color: green
+}
+
+.item {
+    margin: 10px;
+    width: 100px;
+}
