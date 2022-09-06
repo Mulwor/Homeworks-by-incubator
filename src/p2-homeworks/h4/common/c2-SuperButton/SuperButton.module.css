@@ -1,7 +1,75 @@
 .default {
-
+    outline: none;
+    background: #99ff99;
+    color: #4551ad;
 }
 
 .red {
-    background: red;
+    background: tomato;
+}
+
+:root {
+    --bg: #1a1e24;
+    --color: #eee;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    min-width: 6.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.button:before,
+.button:after {
+    width: 100px;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: palegoldenrod;
+    border-radius: 80%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+.button:disabled {
+    color: grey;
+    cursor: auto;
+    z-index: -1;
+}
+
+.button:disabled::after {
+    z-index: -1;
+}
+.button:disabled::before {
+    z-index: -1;
 }
