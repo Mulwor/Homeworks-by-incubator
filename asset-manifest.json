@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Homeworks-by-incubator/static/css/main.1af792e2.css",
+    "main.js": "/Homeworks-by-incubator/static/js/main.dfdff41f.js",
+    "index.html": "/Homeworks-by-incubator/index.html",
+    "main.1af792e2.css.map": "/Homeworks-by-incubator/static/css/main.1af792e2.css.map",
+    "main.dfdff41f.js.map": "/Homeworks-by-incubator/static/js/main.dfdff41f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1af792e2.css",
+    "static/js/main.dfdff41f.js"
+  ]
+}
