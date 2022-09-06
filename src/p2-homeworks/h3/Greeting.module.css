@@ -1,7 +1,11 @@
-.someClass {
-
+.title {
+    text-align: center;
 }
 
 .error {
     border: 1px solid red;
+}
+
+.container {
+    margin-left: 40px;
 }

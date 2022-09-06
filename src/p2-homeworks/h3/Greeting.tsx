@@ -1,5 +1,7 @@
 import React, {ChangeEvent, MouseEventHandler} from 'react'
-import s from './Greeting.module.css'
+ import s from './Greeting.module.css'
+import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type GreetingPropsType = {
     name: string // need to fix any
@@ -16,14 +18,22 @@ const Greeting: React.FC<GreetingPropsType> = (
     const inputClass = s.error // need to fix with (?:)
 
     return (
-        <div>
-            <input
-                   value={name}
-                   onChange={setNameCallback}
-                   className={inputClass}
+        <div className={s.container}>
+            {/*<input*/}
+            {/*       value={name}*/}
+            {/*       onChange={setNameCallback}*/}
+            {/*       className={inputClass}*/}
+
+            {/*/>*/}
+
+            <SuperInputText
+                value={name}
+                onChange={setNameCallback}
             />
+
             <span>{error}</span>
-            <button onClick={addUser}>add</button>
+
+            <SuperButton onClick={addUser}> add </SuperButton>
             <span>{totalUsers}</span>
         </div>
     )
